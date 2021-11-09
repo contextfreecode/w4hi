@@ -13,7 +13,7 @@ const smiley = &[_]u8 {
 
 const GAMEPAD1 = @intToPtr(*u8, 0x16);
 
-pub fn main() void {
+export fn update() void {
     w4.DRAW_COLORS.* = 2;
     w4.text("Hello from C!", 10, 10);
     // const gamepad = w4.GAMEPAD1.*;
