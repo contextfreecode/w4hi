@@ -1,4 +1,4 @@
-Build odin (see also [this gist](https://gist.github.com/gingerBill/9a6c0a6f0a34a147ff82e9f6047db2ac)):
+## Odin (see also [this gist](https://gist.github.com/gingerBill/9a6c0a6f0a34a147ff82e9f6047db2ac)):
 
 ```
 odin build src \
@@ -9,7 +9,7 @@ odin build src \
     "
 ```
 
-Try to build zig:
+## Zig
 
 ```
 zig build-obj src/main.zig -I src -target wasm32-freestanding -O ReleaseSmall
