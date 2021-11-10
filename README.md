@@ -12,7 +12,8 @@ odin build src \
 Try to build zig:
 
 ```
-zig build-lib \
-    -dynamic -I src src/main.zig -O ReleaseSmall --stack 1024 \
-    -target wasm32-freestanding
+zig build-obj src/main.zig -I src -target wasm32-freestanding -O ReleaseSmall
+wasm-ld --no-entry --export-all --allow-undefined -zstack-size=8192 \
+    --global-base=6560 --max-memory=65536 --initial-memory=65536 \
+    --import-memory -o main.wasm main.o
 ```

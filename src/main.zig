@@ -15,7 +15,7 @@ const GAMEPAD1 = @intToPtr(*u8, 0x16);
 
 export fn update() void {
     w4.DRAW_COLORS.* = 2;
-    w4.text("Hello from C!", 10, 10);
+    w4.text("Hello from Zig!", 10, 10);
     // const gamepad = w4.GAMEPAD1.*;
     const gamepad = GAMEPAD1.*;
     if ((gamepad & w4.BUTTON_1) != 0) {

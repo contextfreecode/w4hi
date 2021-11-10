@@ -1,3 +1,5 @@
+*.o
 node_modules
 notes.txt
+target
 zig-cache
