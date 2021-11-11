@@ -10,7 +10,7 @@
     i32.const 0
     i32.const 2
     i32.store16 offset=20
-    i32.const 6568
+    i32.const 6585
     i32.const 10
     i32.const 10
     call $text
@@ -32,11 +32,10 @@
     i32.const 8
     i32.const 0
     call $blit
-    i32.const 6584
+    i32.const 6568
     i32.const 16
     i32.const 90
     call $text)
-  (table $T0 1 1 funcref)
   (global $g0 (mut i32) (i32.const 14800))
   (global $__dso_handle i32 (i32.const 6560))
   (global $__data_end i32 (i32.const 6601))
@@ -52,4 +51,4 @@
   (export "__heap_base" (global 4))
   (export "__memory_base" (global 5))
   (export "__table_base" (global 6))
-  (data $d0 (i32.const 6560) "\c3\81$$\00$\99\c3Hello from Zig!\00Press X to blink\00"))
+  (data $d0 (i32.const 6560) "\c3\81$$\00$\99\c3Press X to blink\00Hello from Zig!\00"))

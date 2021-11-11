@@ -11,6 +11,14 @@ odin build src \
 
 ## Zig
 
+Zig 0.9.0
+```
+zig build-lib src/main.zig -I src -target wasm32-freestanding -O ReleaseSmall \
+    -dynamic --global-base=6560 --import-memory --initial-memory=65536 \
+    --max-memory=65536 --stack 8192
+```
+
+Zig 0.8.0
 ```
 zig build-obj src/main.zig -I src -target wasm32-freestanding -O ReleaseSmall
 wasm-ld --no-entry --export-all --allow-undefined -zstack-size=8192 \
