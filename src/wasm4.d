@@ -84,14 +84,14 @@ void text(const char* text, int x, int y);
 /** Plays a sound tone. */
 void tone(uint frequency, uint duration, uint volume, uint flags);
 
-enum TONE_PULSE1 = 0;
-enum TONE_PULSE2 = 1;
-enum TONE_TRIANGLE = 2;
-enum TONE_NOISE = 3;
-enum TONE_MODE1 = 0;
-enum TONE_MODE2 = 4;
-enum TONE_MODE3 = 8;
-enum TONE_MODE4 = 12;
+enum tonePulse1 = 0;
+enum tonePulse2 = 1;
+enum toneTriangle = 2;
+enum toneNoise = 3;
+enum toneMode1 = 0;
+enum toneMode2 = 4;
+enum toneMode3 = 8;
+enum toneMode4 = 12;
 
 // ┌───────────────────────────────────────────────────────────────────────────┐
 // │                                                                           │
